@@ -34,7 +34,7 @@
                 Cinta mereka terhalang perbedaan agama, namun musik menyatukan mereka.
             </p>
             <p class="price">Rp 20.000 <span>(Belum termasuk pajak)</span></p>
-            <button class="btn-view" onclick="window.open('detail-film.html')">Lihat</button>
+            <button class="btn-view" onclick="location.href='detail-film-lokananta.html';">Lihat</button>
         </div>
     </section>  
     <!-- Promo Section -->
@@ -76,7 +76,7 @@
     <section id="koleksi-horor" class="category">
         <h2>Koleksi Film Horor Indonesia</h2>
         <div class="new-grid">
-            <div class="new-card" style="background: url('assets/horor/horor1.jpg') center center/cover"></div>
+            <div class="new-card" style="background: url('assets/horor/horor1.jpg') center center/cover" onclick="location.href='detail-film-tuyul.html';"></div>
             <div class="new-card" style="background: url('assets/horor/horor2.webp') center center/cover"></div>
             <div class="new-card" style="background: url('assets/horor/horor3.webp') center center/cover"></div>
             <div class="new-card" style="background: url('assets/horor/horor4.webp') center center/cover"></div>
@@ -102,22 +102,22 @@
     <section id="blog" class="category">
         <h2>Blog</h2>
         <div class="grid">
-            <div class="blog-card" onclick="window.open('detail-blog.html')">
+            <div class="blog-card" onclick="location.href='detail-blog.html';">
                 <img src="assets/blog/blog1.jpg" alt="Blog 1">
                 <h3>Rekomendasi Film Lokal Baru Buat Cinephil, Bisa Memperluas Sudut Pandangmu!</h3>
                 <p>17 Januari 2024</p>
             </div>
-            <div class="blog-card" onclick="window.open('detail-blog.html')">
+            <div class="blog-card" onclick="location.href='detail-blog.html';">
                 <img src="assets/blog/blog2.jpg" alt="Blog 1">
                 <h3>Film Hidden Gem Yang Wajib Masuk Watchlist di Jelajah Sinema Indonesia</h3>
                 <p>4 Januari 2024</p>
             </div>
-            <div class="blog-card" onclick="window.open('detail-blog.html')">
+            <div class="blog-card" onclick="location.href='detail-blog.html';">
                 <img src="assets/blog/blog 4.jpg" alt="Blog 1">
                 <h3>8 Film Baru Yang Bikin Emosi Campur Aduk! Dari Terharu, Cekikikan, Sampai Takut</h3>
                 <p>19 September 2024</p>
             </div>
-            <div class="blog-card" onclick="window.open('detail-blog.html')">
+            <div class="blog-card" onclick="location.href='detail-blog.html';">
                 <img src="assets/blog/blog1.jpg" alt="Blog 1">
                 <h3>Time Travel ke Masa Lalu Lewat Nostalgia Film Terbaik</h3>
                 <p> 27 Desember 2023</p>
@@ -226,5 +226,23 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+        // Event handler untuk navigasi scroll halus
+        const navLinks = document.querySelectorAll("nav ul li a");
+        navLinks.forEach(link => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100, // Sesuaikan offset jika ada header tetap
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
