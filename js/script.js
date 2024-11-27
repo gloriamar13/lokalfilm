@@ -1,11 +1,5 @@
 // Menambahkan event listener setelah DOM selesai dimuat
 document.addEventListener("DOMContentLoaded", function () {
-    // Interaksi tombol "Lihat" di highlight section
-    const btnView = document.querySelector(".btn-view");
-    btnView.addEventListener("click", function () {
-        alert("Detail film 'Lokananta' segera hadir!");
-    });
-
     // Validasi sederhana untuk formulir newsletter
     const newsletterForm = document.querySelector("form");
     const emailInput = newsletterForm.querySelector("input[type='email']");

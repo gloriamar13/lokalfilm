@@ -12,11 +12,15 @@ body {
 }
 
 header {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 52px;
+    box-sizing: border-box;
     background-color: #001845;
+    z-index: 1000;
 }
 
 header .logo img {
@@ -464,4 +468,172 @@ header .btn-masuk:hover {
 
 .new-card:hover, .blog-card:hover {
     cursor: pointer;
+}
+
+#detail-blog {
+    background: #FFF;
+    color: #001845;
+    padding: 30px 40px;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    background: #001845;
+    color: #FFF;
+    padding: 10px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+#detail-blog .blog-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#detail-blog .blog-image {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.blog-content {
+    margin-top: 20px;
+    text-align: justify;
+    padding: 0 60px;
+}
+
+.blog-content p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.blog-content .source {
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.source a {
+    color: #001845;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#hero, #detail-blog, #detail-film {
+    padding-top: 120px;
+}
+
+#detail-film {
+    padding: 80px;
+    padding-top: 120px;
+}
+
+#detail-film .top {
+    display: flex;
+    gap: 30px;
+    align-items: end;
+}
+
+#detail-film .top img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#detail-film .top .info {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+}
+
+#detail-film .top .duration span {
+    border: 1px solid #fff;
+    border-radius: 24px;
+    padding: 2px 4px;
+    margin: 0 4px;
+}
+
+#detail-film .top .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #de8230;
+}
+
+#detail-film .top .buttons {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+}
+
+#detail-film .top .buttons button {
+    padding: 12px 32px;
+    font-size: 1rem;
+    border-radius: 32px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#detail-film .top .buttons .buy {
+    border: none;
+    background-color: #dda15e;
+    color: #001233;
+}
+
+#detail-film .top .buttons .outlined {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#detail-film .top .buttons .outlined:hover {
+    border: none;
+    background-color: #dda15e;
+    color: #001233;
+}
+
+#detail-film .top .buttons .buy:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#detail-film .bottom {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#detail-film .bottom .desc {
+    margin-bottom: 20px;
+}
+
+#detail-film .bottom div {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+#detail-film .bottom div h4 {
+    margin-bottom: 2px !important;
+    font-weight: 200;
+    color: #b7b7b7;
 }
