@@ -102,22 +102,22 @@
     <section id="blog" class="category">
         <h2>Blog</h2>
         <div class="grid">
-            <div class="blog-card">
-                <img src="assets/blog/blog1.jpg" alt="Blog 1" h>
+            <div class="blog-card" onclick="window.open('detail-blog.html')">
+                <img src="assets/blog/blog1.jpg" alt="Blog 1">
                 <h3>Rekomendasi Film Lokal Baru Buat Cinephil, Bisa Memperluas Sudut Pandangmu!</h3>
                 <p>17 January 2024</p>
             </div>
-            <div class="blog-card">
+            <div class="blog-card" onclick="window.open('detail-blog.html')">
                 <img src="assets/blog/blog2.jpg" alt="Blog 1">
                 <h3>Film Hidden Gem Yang Wajib Masuk Watchlist di Jelajah Sinema Indonesia</h3>
                 <p>4 January 2024</p>
             </div>
-            <div class="blog-card">
+            <div class="blog-card" onclick="window.open('detail-blog.html')">
                 <img src="assets/blog/blog 4.jpg" alt="Blog 1">
                 <h3>8 Film Baru Yang Bikin Emosi Campur Aduk! Dari Terharu, Cekikikan, Sampai Takut</h3>
                 <p>19 Sep 2024</p>
             </div>
-            <div class="blog-card">
+            <div class="blog-card" onclick="window.open('detail-blog.html')">
                 <img src="assets/blog/blog1.jpg" alt="Blog 1">
                 <h3>Time Travel ke Masa Lalu Lewat Nostalgia Film Terbaik</h3>
                 <p> 27 December 2023</p>
@@ -162,7 +162,7 @@
                     <input type="text" id="film-title" name="film-title" placeholder="Masukkan judul film" required>
                     
                     <label for="rating">Rating:</label>
-                    <select id="rating" name="rating" required>
+                    <select class="dropdown-rating" name="rating" required>
                         <option value="5">⭐ 5</option>
                         <option value="4.5">⭐ 4.5</option>
                         <option value="4">⭐ 4</option>

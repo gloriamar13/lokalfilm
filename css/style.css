@@ -333,6 +333,7 @@ header .btn-masuk:hover {
     border-radius: 5px;
     background-color: #001233;
     color: #ffffff;
+    box-sizing: border-box;
 }
 
 .add-review button {
@@ -459,4 +460,8 @@ header .btn-masuk:hover {
 
 .footer-bottom .p1 {
     margin-top: 40px;
+}
+
+.new-card:hover, .blog-card:hover {
+    cursor: pointer;
 }
